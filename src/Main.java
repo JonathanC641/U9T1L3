@@ -120,55 +120,109 @@ public class Main {
 //        validLicensePlate = testTruck6.validateLicensePlate();
 //        System.out.println(validLicensePlate);
 
-        System.out.println("--------- TEST 1 ---------");
-        System.out.println("---- non-electric Taxi ---");
-        System.out.println("--------------------------");
-        Taxi testTaxi1 = new Taxi("JMD645", 10.0, 1, false, 5.0); // not electric
-        testTaxi1.applyDiscount();
-        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi1.getTollFee());
-        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
-        System.out.println("total passengers: " + testTaxi1.getPassengers());
-        testTaxi1.pickupRiders(2, 3.75);
-        System.out.println("-----------");
-        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi1.getTollFee());
-        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
-        System.out.println("total passengers: " + testTaxi1.getPassengers());
-        testTaxi1.pickupRiders(2, 5.90);
-        System.out.println("-----------");
-        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi1.getTollFee());
-        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
-        System.out.println("total passengers: " + testTaxi1.getPassengers());
-        testTaxi1.pickupRiders(3, 3.40);
-        System.out.println("-----------");
-        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi1.getTollFee());
-        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
-        System.out.println("total passengers: " + testTaxi1.getPassengers());
+//        System.out.println("--------- TEST 1 ---------");
+//        System.out.println("---- non-electric Taxi ---");
+//        System.out.println("--------------------------");
+//        Taxi testTaxi1 = new Taxi("JMD645", 10.0, 1, false, 5.0); // not electric
+//        testTaxi1.applyDiscount();
+//        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi1.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi1.getPassengers());
+//        testTaxi1.pickupRiders(2, 3.75);
+//        System.out.println("-----------");
+//        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi1.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi1.getPassengers());
+//        testTaxi1.pickupRiders(2, 5.90);
+//        System.out.println("-----------");
+//        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi1.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi1.getPassengers());
+//        testTaxi1.pickupRiders(3, 3.40);
+//        System.out.println("-----------");
+//        System.out.println("discount already applied? " + testTaxi1.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi1.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi1.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi1.getPassengers());
+//
+//        System.out.println("\n--------- TEST 2 ---------");
+//        System.out.println("----- electric Taxi ------");
+//        System.out.println("--------------------------");
+//        Taxi testTaxi2 = new Taxi("KCD123", 25, 1, true, 6.0); // electric
+//        testTaxi2.applyDiscount();
+//        System.out.println("discount already applied? " + testTaxi2.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi2.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi2.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi2.getPassengers());
+//        testTaxi2.pickupRiders(2, 3.7);
+//        System.out.println("-----------");
+//        System.out.println("discount already applied? " + testTaxi2.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi2.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi2.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi2.getPassengers());
+//        testTaxi2.pickupRiders(2, 4.75);
+//        System.out.println("-----------");
+//        System.out.println("discount already applied? " + testTaxi2.isDiscountApplied());
+//        System.out.println("toll fee: " + testTaxi2.getTollFee());
+//        System.out.println("total fare collected: " + testTaxi2.getFareCollected());
+//        System.out.println("total passengers: " + testTaxi2.getPassengers());
 
-        System.out.println("\n--------- TEST 2 ---------");
-        System.out.println("----- electric Taxi ------");
-        System.out.println("--------------------------");
-        Taxi testTaxi2 = new Taxi("KCD123", 25, 1, true, 6.0); // electric
-        testTaxi2.applyDiscount();
-        System.out.println("discount already applied? " + testTaxi2.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi2.getTollFee());
-        System.out.println("total fare collected: " + testTaxi2.getFareCollected());
-        System.out.println("total passengers: " + testTaxi2.getPassengers());
-        testTaxi2.pickupRiders(2, 3.7);
-        System.out.println("-----------");
-        System.out.println("discount already applied? " + testTaxi2.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi2.getTollFee());
-        System.out.println("total fare collected: " + testTaxi2.getFareCollected());
-        System.out.println("total passengers: " + testTaxi2.getPassengers());
-        testTaxi2.pickupRiders(2, 4.75);
-        System.out.println("-----------");
-        System.out.println("discount already applied? " + testTaxi2.isDiscountApplied());
-        System.out.println("toll fee: " + testTaxi2.getTollFee());
-        System.out.println("total fare collected: " + testTaxi2.getFareCollected());
-        System.out.println("total passengers: " + testTaxi2.getPassengers());
+//        Car myCar = new Car("MK4567", 10.0, 3, true);
+//        System.out.println(myCar.calculateTollPrice());
+//
+//        Car myCar2 = new Car("FJ8731", 10.0, 6, true);
+//        System.out.println(myCar2.calculateTollPrice());
+//
+//        // the way toll price is calculated for a Vehicle
+//        // shouldn't have changed
+//        Vehicle myVehicle = new Vehicle("KX1543", 10.0, 6);
+//        System.out.println(myVehicle.calculateTollPrice());
+//        Truck myTruck = new Truck("TY45LX", 20.0, 3, 5, true);
+//        System.out.println(myTruck.calculateTollPrice());
+//
+//        Truck myTruck2 = new Truck("LM90LX", 20.0, 3, 5, false);
+//        System.out.println(myTruck2.calculateTollPrice());
+//
+//        // the way toll price is calculated for a Vehicle
+//        // shouldn't have changed
+//        Vehicle myVehicle2 = new Vehicle("TR987", 10.0, 6);
+//        System.out.println(myVehicle2.calculateTollPrice());
+
+//        Taxi taxi = new Taxi("JMD645", 10.0, 5, false, 5.0);
+//        System.out.println(taxi.calculateTollPrice());
+//        Taxi myTaxi3 = new Taxi("TX1234", 10.0, 6, true, 0.0);
+//        System.out.println(myTaxi3.getPassengers()); // should be 6, including driver
+//
+//        // now let's drop off the 5 riders, charging 3.50 per rider
+//        boolean success = myTaxi3.chargeAndDropOffRiders(3.50);
+//        System.out.println(success); // should be true
+//        System.out.println(myTaxi3.getPassengers()); // should now be 1
+//        System.out.println(myTaxi3.getFareCollected()); // should be 17.50
+
+//        Car myCar3 = new Car("MK4567", 6.75, 4, true);
+//        myCar3.printInfo();
+
+//        Truck myTruck3 = new Truck("TB12MX", 15.50, 2, 4, true);
+//        myTruck3.printInfo();
+//        Taxi myTaxi4 = new Taxi("TX1412", 13.75, 4, true, 2.0);
+//        myTaxi4.printInfo();
+
+        Vehicle vehicle1 = new Vehicle("MC56WQ", 10.75, 5);
+        vehicle1.honkHorn();
+        Car car1 = new Car("KXN73F", 8.50, 2, true);
+        car1.honkHorn();
+        Truck truck1 = new Truck("3K9JMX", 24.75, 4, 6, true);
+        truck1.honkHorn();
+        Taxi taxi1 = new Taxi("TX1412", 13.75, 4, true, 2.0);
+        taxi1.honkHorn();
+
+
+
+
+
 
 
 

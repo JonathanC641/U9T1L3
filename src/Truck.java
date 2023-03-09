@@ -8,13 +8,13 @@ public class Truck extends Vehicle {
         this.hasTrailer = hasTrailer;
     }
 
-    public void printTruck(){
-        System.out.println("License Plate: " + getLicensePlate());
-        System.out.println("Toll Fee: " + getTollFee());
-        System.out.println("Passengers: " +getPassengers());
+    public void printInfo(){
+        super.printInfo();
         System.out.println("Axles: " + axles);
-        System.out.println("Has Trailer: "+ hasTrailer);
+        System.out.println("Has Trailer? " + hasTrailer);
     }
+
+
 
     public boolean validateLicensePlate(){
         String lastTwo = getLicensePlate().substring(getLicensePlate().length()-2, getLicensePlate().length());
@@ -28,5 +28,12 @@ public class Truck extends Vehicle {
         return true;
     }
 
-
+    public double calculateTollPrice() {
+        double total = getTollFee() * axles;
+        if(hasTrailer){
+            return total*=2;
+        }else{
+            return total;
+        }
+    }
 }

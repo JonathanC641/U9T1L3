@@ -9,6 +9,12 @@ public class Vehicle {
         this.tollFee = tollFee;
         this.passengers = passengers;
     }
+    public void printInfo(){
+        System.out.println("License Plate: " + licensePlate);
+        System.out.println("Toll fee: " + tollFee);
+        System.out.println("Passengers: " + passengers);
+    }
+
 
     public double calculateTollPrice() {
         return tollFee * passengers;
@@ -32,6 +38,11 @@ public class Vehicle {
 
     public void setPassengers(int num){
         passengers =num;
+    }
+
+    public void honkHorn(){
+        System.out.println("BEEEP");
+        System.out.println("Get outta the way!");
     }
 
 }
